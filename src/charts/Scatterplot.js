@@ -56,7 +56,7 @@ export default function ChartSkeleton() {
                 <p style={{
                     textAlign: "center"
                 }}>
-                    <a href="https://github.com/badpickle149/INFO474-React-Parcel-Template/blob/main/src/charts/Barchart.js">See the code here</a>
+                    <a href="https://github.com/badpickle149/INFO474-React-Parcel-Template/blob/main/src/charts/Scatterplot.js">See the code here</a>
                 </p>
                 {/* add styling to center svg */}
                 <svg style={{
