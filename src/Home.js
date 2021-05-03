@@ -2,14 +2,10 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import { 
     Container,
-    Card,
-    CardContent,
-    CardActions,
     Typography,
-    Button 
 } from '@material-ui/core';
-import { Link } from 'react-router-dom';
 import ChartCard from './components/ChartCard';
+import { types } from './charts';
 
 const useStyles = makeStyles({
     header: {
@@ -24,13 +20,21 @@ const useStyles = makeStyles({
 
 export default function Home() {
     const classes = useStyles();
+    const cards = types.map((d) => {
+        return <ChartCard 
+            title={d.name} 
+            description={d.description} 
+            path={d.path}
+            link={d.link}
+            />;
+    });
 
     return (
         <Container>
             <Typography className={classes.header} variant="h1" >
                 Choose an example below!
             </Typography>
-            <ChartCard title="Bar Chart" description="A simple bar chart using React and D3" path="/barchart" />
+            {cards}
         </Container>
     )
 }

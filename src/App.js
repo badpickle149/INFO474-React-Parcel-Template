@@ -11,6 +11,7 @@ import {
     ThemeProvider 
 } from '@material-ui/core/styles';
 import BarChart from './charts/Barchart';
+import Axes from './charts/Axes';
 
 const theme = createMuiTheme({
     typography: {
@@ -18,7 +19,7 @@ const theme = createMuiTheme({
             'Roboto'
         ]
     }
-})
+});
 
 export default function App() {
     return (
@@ -30,6 +31,9 @@ export default function App() {
                     </Route>
                     <Route exact path="/barchart">
                         <BarChart />
+                    </Route>
+                    <Route exact path="/axes">
+                        <Axes />
                     </Route>
                 </Switch>
             </Router>

@@ -1,6 +1,7 @@
 import React from 'react';
 import { extent } from 'd3-array';
 import { scaleLinear } from 'd3-scale';
+import { Axis, Orient } from 'd3-axis-for-react';
 import { useFetch } from '../hooks/useFetch';
 
 export default function ChartSkeleton() {
@@ -18,6 +19,23 @@ export default function ChartSkeleton() {
         return <h2>Loading ...</h2>
     // only work with all data if data is loaded
     } else {
+        // let's make two axes: 
+        // x-axis representing our pokemon attack,
+        // y-axis representing our pokemon defense
+
+        // first, we need scales
+        // define x scale
+        const attackExtent = extent(data, d => +d.Attack);
+        const xScale = scaleLinear()
+            .domain(attackExtent)
+            .range([margin, width - margin]);
+        
+        // define y scale
+        const defenseExtent = extent(data, d => +d.Defense);
+        const yScale = scaleLinear()
+            .domain(defenseExtent)
+            .range([height - margin, margin]);
+
         return (
             <div style={{
                 marginLeft: "auto",
@@ -25,7 +43,7 @@ export default function ChartSkeleton() {
             }}> 
                 <h1 style={{
                     textAlign: "center"
-                }}>Chart name</h1>
+                }}>Axes</h1>
                 <p style={{
                     textAlign: "center"
                 }}>
@@ -36,7 +54,20 @@ export default function ChartSkeleton() {
                     display: "block",
                     margin: "auto"
                 }} width={width} height={height}>
-                    
+                {/* define our axes here. First, we need to position them with <g> elements */}
+                <g transform={`translate(${margin}, 0)`} className="axisLeft">
+                    {/* define our axis here */}
+                    <Axis
+                        orient={Orient.left}
+                        scale={yScale}
+                    />
+                </g>
+                <g transform={`translate(0, ${height - margin})`} className="axisBottom">
+                    <Axis
+                        orient={Orient.bottom}
+                        scale={xScale}
+                    />
+                </g>
                 </svg>
             </div>
         )
