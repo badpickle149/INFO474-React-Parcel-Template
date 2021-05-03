@@ -7,8 +7,14 @@ export const types = [
     },
     {
         name: "Axes",
-        link: "",
+        link: "https://github.com/badpickle149/INFO474-React-Parcel-Template/blob/main/src/charts/Axes.js",
         description: "Making axes using d3-axis-for-react package",
         path: "/axes"
+    },
+    {
+        name: "Scatter plot",
+        link: "",
+        description: "A simple run of the mill scatter plot",
+        path: "/scatter-plot"
     }
 ]

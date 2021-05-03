@@ -22,6 +22,7 @@ export default function ChartSkeleton() {
         // let's make two axes: 
         // x-axis representing our pokemon attack,
         // y-axis representing our pokemon defense
+        // see documentation of this package here: https://github.com/tmcw/d3-axis-for-react
 
         // first, we need scales
         // define x scale

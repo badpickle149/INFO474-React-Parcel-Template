@@ -12,6 +12,7 @@ import {
 } from '@material-ui/core/styles';
 import BarChart from './charts/Barchart';
 import Axes from './charts/Axes';
+import Scatterplot from './charts/Scatterplot';
 
 const theme = createMuiTheme({
     typography: {
@@ -34,6 +35,9 @@ export default function App() {
                     </Route>
                     <Route exact path="/axes">
                         <Axes />
+                    </Route>
+                    <Route exact path="/scatter-plot">
+                        <Scatterplot />
                     </Route>
                 </Switch>
             </Router>
