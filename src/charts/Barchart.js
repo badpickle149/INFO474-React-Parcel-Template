@@ -111,6 +111,11 @@ export default function ChartSkeleton() {
                 <h1 style={{
                     textAlign: "center"
                 }}>Bar chart</h1>
+                <p style={{
+                    textAlign: "center"
+                }}>
+                    <a href="https://github.com/badpickle149/INFO474-React-Parcel-Template/blob/main/src/charts/Barchart.js">See the code here</a>
+                </p>
                 {/* add styling to center svg */}
                 <svg style={{
                     display: "block",

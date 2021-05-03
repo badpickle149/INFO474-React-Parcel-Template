@@ -24,6 +24,11 @@ export default function ChartSkeleton() {
                 marginRight: "auto"
             }}> 
                 <h3>Chart Name</h3>
+                <p style={{
+                    textAlign: "center"
+                }}>
+                    <a href="https://github.com/badpickle149/INFO474-React-Parcel-Template/blob/main/src/charts/Barchart.js">See the code here</a>
+                </p>
                 {/* add styling to center svg */}
                 <svg style={{
                     display: "block",

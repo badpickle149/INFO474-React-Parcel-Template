@@ -26,7 +26,6 @@ export default function App() {
             <Router>    
                 <Switch>
                     <Route exact path="/">
-                        <h1>hellow world!</h1>
                         <Home />
                     </Route>
                     <Route exact path="/barchart">
