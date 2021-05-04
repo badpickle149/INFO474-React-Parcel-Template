@@ -13,6 +13,7 @@ import {
 import BarChart from './charts/Barchart';
 import Axes from './charts/Axes';
 import Scatterplot from './charts/Scatterplot';
+import Map from './charts/Map';
 
 const theme = createMuiTheme({
     typography: {
@@ -38,6 +39,9 @@ export default function App() {
                     </Route>
                     <Route exact path="/scatter-plot">
                         <Scatterplot />
+                    </Route>
+                    <Route exact path="/map">
+                        <Map />
                     </Route>
                 </Switch>
             </Router>

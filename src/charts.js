@@ -16,5 +16,11 @@ export const types = [
         link: "https://github.com/badpickle149/INFO474-React-Parcel-Template/blob/main/src/charts/Scatterplot.js",
         description: "A simple run of the mill scatter plot",
         path: "/scatter-plot"
+    },
+    {
+        name: "Map",
+        link: "https://github.com/badpickle149/INFO474-React-Parcel-Template/blob/main/src/charts/Map.js",
+        description: "A map of the US using topojson",
+        path: "/map"
     }
 ]
