@@ -1,3 +1,4 @@
+// contains information for each chart
 export const types = [
     {
         name: "Bar chart",
@@ -22,5 +23,11 @@ export const types = [
         link: "https://github.com/badpickle149/INFO474-React-Parcel-Template/blob/main/src/charts/Map.js",
         description: "A map of the US using topojson",
         path: "/map"
+    },
+    {
+        name: "Tooltip (interaction)",
+        link: "https://github.com/badpickle149/INFO474-React-Parcel-Template/blob/main/src/charts/Tooltip.js",
+        description: "display a tooltip when a user hovers over a point",
+        path: "/tooltip"
     }
 ]

@@ -22,6 +22,7 @@ export default function Home() {
     const classes = useStyles();
     const cards = types.map((d) => {
         return <ChartCard 
+            key={d.name}
             title={d.name} 
             description={d.description} 
             path={d.path}
