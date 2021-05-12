@@ -118,7 +118,7 @@ export default function ChartSkeleton() {
                 <p style={{
                     textAlign: "center"
                 }}>
-                    <a href="https://github.com/badpickle149/INFO474-React-Parcel-Template/blob/main/src/charts/Scatterplot.js">See the code here</a>
+                    <a href="https://github.com/badpickle149/INFO474-React-Parcel-Template/blob/main/src/charts/Tooltip.js">See the code here</a>
                 </p>
                 {/* Make sure to include tooltip here!!! */}
                 {tooltip}

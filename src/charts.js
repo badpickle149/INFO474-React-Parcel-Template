@@ -29,5 +29,11 @@ export const types = [
         link: "https://github.com/badpickle149/INFO474-React-Parcel-Template/blob/main/src/charts/Tooltip.js",
         description: "display a tooltip when a user hovers over a point",
         path: "/tooltip"
+    },
+    {
+        name: "Line chart",
+        link: "https://github.com/badpickle149/INFO474-React-Parcel-Template/blob/main/src/charts/Linechart.js",
+        description: "Line chart of stock data",
+        path: "/linechart"
     }
 ]

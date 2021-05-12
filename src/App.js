@@ -15,6 +15,7 @@ import Axes from './charts/Axes';
 import Scatterplot from './charts/Scatterplot';
 import Map from './charts/Map';
 import Tooltip from './charts/Tooltip';
+import Linechart from './charts/Linechart';
 
 const theme = createMuiTheme({
     typography: {
@@ -46,6 +47,9 @@ export default function App() {
                     </Route>
                     <Route exact path="/tooltip">
                         <Tooltip />
+                    </Route>
+                    <Route>
+                        <Linechart />
                     </Route>
                 </Switch>
             </Router>
